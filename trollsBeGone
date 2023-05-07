@@ -1,0 +1,12 @@
+function trollsBeGone(sentence) {
+  const vowels = "aeiouAEIOU";
+  let newSentence = "";
+  for (let i = 0; i < sentence.length; i++) {
+      const char = sentence[i];
+      if(!vowels.includes(char)) {
+          newSentence += char;
+      }
+  }
+  return newSentence;
+}
+console.log(trollsBeGone("This website is for losers LOL"))
